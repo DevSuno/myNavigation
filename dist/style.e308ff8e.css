@@ -1,0 +1,80 @@
+* {
+  border-sizing: border-box
+}
+
+* {
+  margin: 0px;
+  padding: 0px
+}
+
+* li {
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.backgroundImage {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.nav {
+  padding: 30px;
+  justify-content: space-between;
+  display: flex;
+
+}
+
+.water {
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.main .clock {
+  font-size: 30px;
+  color: white;
+  padding: 50px;
+
+
+}
+
+.main .search .wd {
+
+  left: calc(50% - 50px);
+  text-align: center;
+  background-color: rgba(255, 255, 255, .25);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 10px;
+  width: 230px;
+  outline: none;
+  border: none;
+  padding: 13px 15px;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, .8);
+  font-size: small;
+  font-weight: 400;
+  font-family: microsoft yahei, sans-serif;
+
+
+}
+
+.foot {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 50px);
+  text-align: center;
+
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

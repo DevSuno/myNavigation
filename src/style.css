@@ -21,18 +21,20 @@ body {
   height: 100vh;
   position: fixed;
   z-index: -1;
+  transform: scale(1.2);
 }
 
 .nav {
   padding: 30px;
-  justify-content: space-between;
   display: flex;
+  justify-content: flex-end;
 
 }
 
-.water {
+.nav .meus {
 
 }
+
 
 .main {
   display: flex;

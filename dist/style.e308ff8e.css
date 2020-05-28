@@ -14,15 +14,12 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-image: url("https://cdn.jsdelivr.net/gh/MobiusBeta/assets/images/BG_A_Default_1.jpg");
+  background-position: center;
+  overflow: hidden;
+  color: white;
 }
 
-.backgroundImage {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: -1;
-  transform: scale(1.2);
-}
 
 .nav {
   padding: 30px;
@@ -31,8 +28,33 @@ body {
 
 }
 
-.nav .meus {
+.nav .meus li {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: #777;
 
+}
+
+.nav .meus li::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  top: -8px;
+  background: #777;
+  position: absolute;
+  right: 0;
+
+}
+
+.nav .meus li::after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  bottom: -8px;
+  background: #777;
+  position: absolute;
+  left: 0;
 }
 
 
@@ -41,12 +63,14 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 100px;
 }
 
 .main .clock {
   font-size: 30px;
-  color: white;
-  padding: 50px;
+
+  padding: 40px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .35)
 
 
 }
@@ -54,10 +78,11 @@ body {
 .main .search .wd {
 
   left: calc(50% - 50px);
+  color: white;
   text-align: center;
   background-color: rgba(255, 255, 255, .25);
   box-shadow: rgba(0, 0, 0, .2) 0 0 10px;
-  width: 230px;
+  width: 200px;
   outline: none;
   border: none;
   padding: 13px 15px;
@@ -68,6 +93,11 @@ body {
   font-family: microsoft yahei, sans-serif;
 
 
+}
+.main .search .wd:hover {
+  width: 400px;
+  background-color: white;
+  color: black;
 }
 
 .foot {

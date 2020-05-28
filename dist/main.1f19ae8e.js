@@ -118,7 +118,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-console.log(112);
+document.body.addEventListener('touchmove', function (e) {
+  e.preventDefault(); //阻止默认的处理方式(阻止下拉滑动的效果)
+}, {
+  passive: false
+}); //passive 参数不能省略，用来兼容ios和android
 },{}],"../../../../.config/yarn/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -147,7 +151,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49812" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58414" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
